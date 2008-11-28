@@ -1,0 +1,55 @@
+8
+
+dir
+77
+http://tools.assembla.com/svn/backshop/trunk/vendor/plugins/restful_authentication/generators/authenticated
+http://tools.assembla.com/svn/backshop
+
+
+
+2007-01-22T13:49:34.282709Z
+25
+elia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+edc21919-8426-0410-b03e-8dfaf3fb3563
+
+USAGE
+file
+
+
+
+
+2007-02-16T15:57:41.000000Z
+cdb2aed081ecd6e02941a4f298da3e72
+2007-01-22T13:49:34.282709Z
+25
+elia
+
+authenticated_generator.rb
+file
+
+
+
+
+2007-02-16T15:57:41.000000Z
+1669477c1d00436166d7f267234541db
+2007-01-22T13:49:34.282709Z
+25
+elia
+
+templates
+dir
+

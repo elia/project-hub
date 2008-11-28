@@ -1,0 +1,32 @@
+.login, sign_up{
+  width:35em;
+  margin:auto;
+  text-align:center;
+  background-color:#fff;
+  
+  padding: 1em;
+  margin-top:3em;
+}
+
+.login form {
+  width:22.5em;
+  margin:auto;
+  text-align:left;
+/*  border:1px solid black;*/
+}
+
+.login form p {
+  margin:1em 0;
+}
+
+.login form div {
+  margin-bottom:1em;
+}
+
+.login .submit {
+  font-size:30px;
+}
+
+.login .sign_up_link, .login .login_link {
+  float:right;
+}

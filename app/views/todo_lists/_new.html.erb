@@ -1,0 +1,9 @@
+<% form_for(TodoList.new, :url => project_todo_lists_path(@project)) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.text_field :title %>
+    <%= f.submit "Add list" %>
+  </p>
+<% end %>
+

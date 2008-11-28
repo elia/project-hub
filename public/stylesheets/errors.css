@@ -1,0 +1,29 @@
+.fieldWithErrors input{
+  border:4px solid red;
+}
+
+#errorExplanation {
+/*  width:25em;*/
+  margin:2em auto;
+  border: 2px solid #ccc;
+  padding: 0em;
+  background-color: #f0f0f0;
+  text-align:left;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-size:large;
+  padding:0.5em;
+  background-color: #ccc;
+  color: #c00;
+}
+
+#errorExplanation p {
+  padding:0.5em;
+}
+
+#errorExplanation ul {
+  padding:0.5em;
+  padding-left:2em;
+}

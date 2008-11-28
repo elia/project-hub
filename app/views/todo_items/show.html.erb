@@ -1,0 +1,23 @@
+<p>
+  <b>Todo list:</b>
+  <%=h @todo_item.todo_list_id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%=h @todo_item.person_id %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @todo_item.text %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @todo_item.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_todo_item_path(@todo_item) %> |
+<%= link_to 'Back', todo_items_path %>

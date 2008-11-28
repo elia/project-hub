@@ -1,0 +1,24 @@
+<h3><%=t 'login.sign_up' %></h3>
+<%= error_messages_for :person %>
+<% form_for :person, :url => people_path do |f| -%>
+  <div><label for="name">Name</label><br/>
+  <%= f.text_field :name %></div>
+
+  <div><label for="surname">Surname</label><br/>
+  <%= f.text_field :surname %></div>
+
+  <div><label for="login">Login</label><br/>
+  <%= f.text_field :login %></div>
+
+  <div><label for="email">Email</label><br/>
+  <%= f.text_field :email %></div>
+
+  <div><label for="password">Password</label><br/>
+  <%= f.password_field :password %></div>
+
+  <div><label for="password_confirmation">Confirm Password</label><br/>
+  <%= f.password_field :password_confirmation %></div>
+  
+  <div class="login_link"><%=t 'login.login_message', :login => link_to(t('login.login'), new_authentication_path) %></div>
+  <div class="submit"><%= submit_tag t'login.sign_up' %></div>
+<% end -%>

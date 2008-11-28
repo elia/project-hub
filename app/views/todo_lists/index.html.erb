@@ -1,0 +1,24 @@
+<h1>Listing todo_lists</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Title</th>
+    <th>Position</th>
+  </tr>
+
+<% for todo_list in @todo_lists %>
+  <tr>
+    <td><%=h todo_list.project_id %></td>
+    <td><%=h todo_list.title %></td>
+    <td><%=h todo_list.position %></td>
+    <td><%= link_to 'Show', todo_list %></td>
+    <td><%= link_to 'Edit', edit_todo_list_path(todo_list) %></td>
+    <td><%= link_to 'Destroy', todo_list, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New todo_list', new_todo_list_path %>

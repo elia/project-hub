@@ -1,0 +1,67 @@
+8
+
+dir
+77
+http://tools.assembla.com/svn/backshop/trunk/vendor/plugins/restful_authentication
+http://tools.assembla.com/svn/backshop
+
+
+
+2007-01-22T13:49:34.282709Z
+25
+elia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+edc21919-8426-0410-b03e-8dfaf3fb3563
+
+Rakefile
+file
+
+
+
+
+2007-02-16T15:57:41.000000Z
+ebfd713e05e35c55392c1999bf3bfb44
+2007-01-22T13:49:34.282709Z
+25
+elia
+
+install.rb
+file
+
+
+
+
+2007-02-16T15:57:41.000000Z
+3773dce53854a282602d79a631a1ff8a
+2007-01-22T13:49:34.282709Z
+25
+elia
+
+generators
+dir
+
+README
+file
+
+
+
+
+2007-02-16T15:57:41.000000Z
+efe08ce454406879176b40c63529889a
+2007-01-22T13:49:34.282709Z
+25
+elia
+

@@ -1,0 +1,15 @@
+<h3><%=t 'login.sign_in' %></h3>
+<% form_tag authentications_path do -%>
+  <div><label for="login">Login</label><br/>
+  <%= text_field_tag 'login' %></div>
+
+  <div><label for="password">Password</label><br/>
+  <%= password_field_tag 'password' %></div>
+
+  <div><label for="remember_me">Remember me:</label>
+  <%= check_box_tag 'remember_me' %></div>
+  
+  <div class="sign_up_link"><%=t 'login.sign_up_message', :sign_up => link_to( t('login.sign_up'), new_person_path ) %></div>
+
+  <div class="submit"><%= submit_tag t('login.login') %></div>
+<% end -%>

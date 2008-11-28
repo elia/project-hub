@@ -1,0 +1,42 @@
+<h1>Project:
+  <b><%=h @project.name %></b>
+</h1>
+
+<p>
+  <b>People:</b>
+  <%=h @project.people.map(&:full_name).join ', ' %>
+</p>
+
+<br />
+<br />
+
+<h3>Todo lists</h3>
+<%= render :partial => 'todo_lists/new' %>
+
+<% for todo_list in @project.todo_lists %>
+  <br /><br />
+  <b><%= todo_list.title %></b>
+  <small>
+    <%= link_to 'edit', edit_project_todo_list_path(@project, todo_list) %>
+    <%= link_to 'destroy',   project_todo_list_path(@project, todo_list), :method => :delete %>
+  </small>
+  <ul>
+    <% for todo_item in todo_list.todo_items %>
+      <li>
+        <%= todo_item.text %>
+        <small>
+          <%= link_to 'edit', edit_project_todo_list_todo_item_path(@project, todo_list, todo_item) %>
+          <%= link_to 'destroy',   project_todo_list_todo_item_path(@project, todo_list, todo_item), :method => :delete %>
+        </small>
+      </li>
+    <% end %>
+    <li><%= render :partial => 'todo_items/new', :locals => {:todo_list => todo_list} %></li>
+  </ul>
+<% end %>
+<br />
+
+<br />
+<br />
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

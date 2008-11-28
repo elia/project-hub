@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  todo_list_id: 1
+  person_id: 1
+  text: MyString
+  position: 1
+
+two:
+  todo_list_id: 1
+  person_id: 1
+  text: MyString
+  position: 1
